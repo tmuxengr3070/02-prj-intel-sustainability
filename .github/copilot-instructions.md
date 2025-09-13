@@ -16,3 +16,6 @@ Resize the intel-header-logo.svg image to a smaller visually pleasing size in th
 
 ## Prompt 3
 Resize the .svg logo with css smaller and add appropriate padding for visual balance.
+
+## Prompt 4
+Add a modern style to the page and use common css selectors (ID, type, class, etc.) throughout the page.

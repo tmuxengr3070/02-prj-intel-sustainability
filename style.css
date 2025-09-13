@@ -1,70 +1,97 @@
-/* Add your CSS here */
+/* Modern base styles for body and links */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #e9eef3;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #0068b5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #004b87;
+}
 
 /* --- HEADER STYLES --- */
-header {
-  background-color: #0068b5; /* Intel blue */
-  color: #fff; /* White text for contrast */
+#main-header {
+  background-color: #0068b5;
+  color: #fff;
   padding: 32px 20px 24px 20px;
-  text-align: center; /* Center all content */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 /* Intel header logo styling */
 .header-logo {
-  width: 68px; /* Smaller, visually pleasing size */
+  width: 56px; /* Make logo smaller */
   display: block;
-  margin: 0 auto 24px auto; /* Centered and more space below */
+  margin: 0 auto 28px auto; /* More padding below for balance */
+  padding: 6px; /* Slightly more padding around */
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,104,181,0.08);
 }
 
-/* Main heading styling */
-header h1 {
-  font-size: 2.2rem;
+#main-header h1 {
+  font-size: 2.3rem;
   margin: 10px 0 8px 0;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-/* Header description styling */
-header p {
-  font-size: 1.1rem;
+#main-header p {
+  font-size: 1.15rem;
   margin: 0 auto;
   max-width: 600px;
+  opacity: 0.95;
 }
 
 /* --- TIMELINE SECTION STYLES --- */
-/* Section background and padding */
-section {
-  background: #f5f7fa; /* Light background for contrast */
+#timeline-section {
+  background: #f5f7fa;
   padding: 36px 0;
-  overflow-x: auto; /* Allow horizontal scroll on small screens */
+  overflow-x: auto;
+  border-radius: 16px;
+  margin: 32px 16px 36px 16px;
+  box-shadow: 0 2px 12px rgba(0,104,181,0.04);
 }
 
-/* Flexbox for timeline cards (divs) */
+/* Flexbox for timeline cards */
 .timeline-cards {
   display: flex;
-  flex-direction: row; /* Row on large screens */
-  gap: 32px; /* Space between cards for Intel aesthetic */
+  flex-direction: row;
+  gap: 32px;
   justify-content: center;
   align-items: stretch;
   padding: 0 20px;
-  overflow-x: auto;
+  
 }
 
 /* Timeline card styling */
 .timeline-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,104,181,0.10);
   min-width: 240px;
   max-width: 300px;
-  flex: 0 0 auto; /* Prevent shrinking */
-  padding: 20px 12px 14px 12px;
+  flex: 0 0 auto;
+  padding: 22px 14px 16px 14px;
   text-align: center;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
   position: relative;
+  border: 1px solid #e0e6ed;
 }
 
-/* Add a subtle hover effect */
 .timeline-card:hover {
-  box-shadow: 0 4px 16px rgba(0,104,181,0.15);
+  box-shadow: 0 6px 24px rgba(0,104,181,0.18);
+  transform: translateY(-4px) scale(1.03);
 }
 
 /* Timeline card image styling */
@@ -74,13 +101,25 @@ section {
   border-radius: 8px;
   margin: 0 auto 14px auto;
   display: block;
+  box-shadow: 0 1px 6px rgba(0,104,181,0.07);
 }
 
 /* Headings and subheadings center aligned */
 .timeline-card h2,
 .timeline-card h3 {
   margin: 8px 0 4px 0;
-  color: #0068b5; /* Intel blue for headings */
+  color: #0068b5;
+  font-weight: 600;
+}
+
+.timeline-card h2 {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 /* Description (p tag) hidden by default */
@@ -92,16 +131,18 @@ section {
   margin: 12px 0 0 0;
   color: #333;
   font-size: 1rem;
+  background: #f0f6fa;
+  border-radius: 6px;
+  padding: 0 8px;
 }
 
-/* Show description on hover */
 .timeline-card:hover p {
   opacity: 1;
-  max-height: 200px; /* Enough for a short paragraph */
+  max-height: 200px;
+  padding: 10px 8px;
 }
 
 /* --- RESPONSIVE DESIGN --- */
-/* Stack timeline cards vertically on small screens */
 @media (max-width: 700px) {
   .timeline-cards {
     flex-direction: column;
@@ -112,10 +153,24 @@ section {
     max-width: 95vw;
     min-width: 0;
   }
+  #timeline-section {
+    margin: 20px 2vw 24px 2vw;
+    border-radius: 10px;
+  }
 }
 
 /* Add some spacing below the section */
-section {
+#timeline-section {
   margin-bottom: 36px;
+}
+
+/* Modern style for the scroll/hint text */
+#timeline-hint {
+  text-align: center;
+  color: #0068b5;
+  font-size: 1rem;
+  margin: 18px 0 32px 0;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
 }
 
