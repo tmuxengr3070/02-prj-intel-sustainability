@@ -11,5 +11,5 @@ I am designing an interactive webpage that presents Intel’s sustainability goa
 
 Add spacing between each section div tag to match Intel’s aesthetic. Use comments in the code to explain each section and styling choice. Make the section tag reveal p tags only on hover for interactivity.
 
-
-
+## Prompt 2
+Resize the intel-header-logo.svg image to a smaller visually pleasing size in the header, centered above the h1 tag with proper padding.

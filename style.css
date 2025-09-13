@@ -10,8 +10,9 @@ header {
 
 /* Intel header logo styling */
 .header-logo {
-  width: 100px; /* Adjust logo size */
-  margin-bottom: 16px;
+  width: 68px; /* Smaller, visually pleasing size */
+  display: block;
+  margin: 0 auto 24px auto; /* Centered and more space below */
 }
 
 /* Main heading styling */
