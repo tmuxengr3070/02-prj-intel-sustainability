@@ -13,3 +13,6 @@ Add spacing between each section div tag to match Intel’s aesthetic. Use comme
 
 ## Prompt 2
 Resize the intel-header-logo.svg image to a smaller visually pleasing size in the header, centered above the h1 tag with proper padding.
+
+## Prompt 3
+Resize the .svg logo with css smaller and add appropriate padding for visual balance.
