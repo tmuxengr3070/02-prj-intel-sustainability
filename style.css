@@ -34,7 +34,8 @@ a:hover {
   display: block;
   margin: 0 auto 28px auto; /* More padding below for balance */
   padding: 6px; /* Slightly more padding around */
-  background: #fff;
+  background: #ffffff;
+  background-color: #0068b5;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,104,181,0.08);
 }
@@ -68,10 +69,13 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  justify-content: center;
+  justify-content: flex-start; /* Align cards to the left for scroll */
   align-items: stretch;
   padding: 0 20px;
-  
+  overflow-x: auto; /* Enable horizontal scroll */
+  scroll-behavior: smooth;
+  /* Prevent wrapping so all cards are in a single row */
+  flex-wrap: nowrap;
 }
 
 /* Timeline card styling */
@@ -81,7 +85,7 @@ a:hover {
   box-shadow: 0 2px 12px rgba(0,104,181,0.10);
   min-width: 240px;
   max-width: 300px;
-  flex: 0 0 auto;
+  flex: 0 0 260px; /* Fixed width for horizontal scroll */
   padding: 22px 14px 16px 14px;
   text-align: center;
   transition: box-shadow 0.2s, transform 0.2s;
