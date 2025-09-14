@@ -29,12 +29,12 @@ a:hover {
 
 /* Intel header logo styling */
 .header-logo {
-  width: 15px;    /* Increased size for better balance */
-  height: 15px;
+  width: 5px;    /* Increased size for better balance */
+  height: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 32px auto; /* More space below */
+  margin: 0 auto 0 auto; /* Remove space below logo */
   padding: 18px;            /* More padding for visual balance */
   background: #ffffff;
   background-color: #0068b5;
@@ -47,6 +47,7 @@ a:hover {
   width: 74px;
   height: 74px;
   display: block;
+
 }
 
 #main-header h1 {
