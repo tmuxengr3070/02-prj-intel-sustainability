@@ -64,6 +64,17 @@ a:hover {
   opacity: 0.95;
 }
 
+/* Add this new rule for the gradient line */
+#main-header hr {
+  border: none;
+  height: 3px;
+  width: 60px;
+  margin: 18px auto 18px auto; /* spacing above and below for balance */
+  background: linear-gradient(90deg, #00c6d7 0%, #0068b5 100%);
+  border-radius: 2px;
+  opacity: 0.85;
+}
+
 /* --- TIMELINE SECTION STYLES --- */
 #timeline-section {
   background: #f5f7fa;
