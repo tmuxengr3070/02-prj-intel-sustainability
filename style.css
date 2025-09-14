@@ -19,12 +19,12 @@ a:hover {
 
 /* --- HEADER STYLES --- */
 #main-header {
-  background-color: #0068b5;
+  /* Vibrant blue to teal diagonal gradient background */
+  background: linear-gradient(135deg, #0068b5 0%, #2da0c4 100%);
   color: #fff;
   padding: 32px 20px 24px 20px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
- 
 }
 
 /* Intel header logo styling */
@@ -36,10 +36,7 @@ a:hover {
   align-items: center;
   margin: 0 auto 0 auto; /* Remove space below logo */
   padding: 18px;            /* More padding for visual balance */
-  background: #ffffff;
-  background-color: #0068b5;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,104,181,0.08);
+  
 }
 
 /* Make sure the img inside .header-logo fits nicely */
