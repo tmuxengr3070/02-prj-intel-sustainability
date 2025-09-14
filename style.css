@@ -24,20 +24,29 @@ a:hover {
   padding: 32px 20px 24px 20px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+ 
 }
 
 /* Intel header logo styling */
 .header-logo {
-  width: 56px; /* Make logo smaller */
-  display: block;
-  margin: 0 auto 28px auto; /* More padding below for balance */
-  padding: 6px; /* Slightly more padding around */
+  width: 15px;    /* Increased size for better balance */
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 32px auto; /* More space below */
+  padding: 18px;            /* More padding for visual balance */
   background: #ffffff;
   background-color: #0068b5;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,104,181,0.08);
+}
+
+/* Make sure the img inside .header-logo fits nicely */
+.header-logo img {
+  width: 74px;
+  height: 74px;
+  display: block;
 }
 
 #main-header h1 {
@@ -72,7 +81,6 @@ a:hover {
   justify-content: flex-start; /* Align cards to the left for scroll */
   align-items: stretch;
   padding: 0 20px;
-  overflow-x: auto; /* Enable horizontal scroll */
   scroll-behavior: smooth;
   /* Prevent wrapping so all cards are in a single row */
   flex-wrap: nowrap;
@@ -100,8 +108,9 @@ a:hover {
 
 /* Timeline card image styling */
 .timeline-card img {
-  width: 100%;
-  max-width: 180px;
+  width: 160px;        /* Landscape thumbnail width */
+  height: 100px;       /* Landscape thumbnail height */
+  object-fit: cover;   /* Crop image to fill the area */
   border-radius: 8px;
   margin: 0 auto 14px auto;
   display: block;

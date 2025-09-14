@@ -19,3 +19,6 @@ Resize the .svg logo with css smaller and add appropriate padding for visual bal
 
 ## Prompt 4
 Add a modern style to the page and use common css selectors (ID, type, class, etc.) throughout the page.
+
+## Prompt 5
+Increase the size of .svg logo to more balanced and visually pleasing for the page. 
