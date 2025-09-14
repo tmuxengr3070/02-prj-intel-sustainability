@@ -22,3 +22,6 @@ Add a modern style to the page and use common css selectors (ID, type, class, et
 
 ## Prompt 5
 Increase the size of .svg logo to more balanced and visually pleasing for the page. 
+
+## Prompt 6
+remove spacing between header-logo and the h1 tag.
