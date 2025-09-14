@@ -79,12 +79,14 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  justify-content: flex-start; /* Align cards to the left for scroll */
+  justify-content: flex-start;
   align-items: stretch;
   padding: 0 20px;
   scroll-behavior: smooth;
-  /* Prevent wrapping so all cards are in a single row */
   flex-wrap: nowrap;
+  overflow-x: auto;
+  /* Enable scroll snap for horizontal timeline */
+  scroll-snap-type: x mandatory;
 }
 
 /* Timeline card styling */
@@ -94,17 +96,14 @@ a:hover {
   box-shadow: 0 2px 12px rgba(0,104,181,0.10);
   min-width: 240px;
   max-width: 300px;
-  flex: 0 0 260px; /* Fixed width for horizontal scroll */
+  flex: 0 0 260px;
   padding: 22px 14px 16px 14px;
   text-align: center;
   transition: box-shadow 0.2s, transform 0.2s;
   position: relative;
   border: 1px solid #e0e6ed;
-}
-
-.timeline-card:hover {
-  box-shadow: 0 6px 24px rgba(0,104,181,0.18);
-  transform: translateY(-4px) scale(1.03);
+  /* Snap each card to the start of the scroll area */
+  scroll-snap-align: start;
 }
 
 /* Timeline card image styling */
